@@ -9,9 +9,9 @@ function About({}: Props) {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className="relative mx-auto flex h-screen max-w-7xl flex-col items-center justify-evenly px-10 text-center md:flex-row md:text-left "
+      className="relative mx-auto flex h-screen max-w-7xl flex-col items-center space-y-20 py-20 sm:justify-evenly px-10 text-center lg:flex-row md:text-left "
     >
-      <h3 className="absolute top-24 text-2xl uppercase tracking-[20px] text-gray-500">
+      <h3 className="absolute top-24 text-md sm:text-2xl uppercase tracking-[5px] text-gray-500">
         About
       </h3>
 
@@ -26,14 +26,14 @@ function About({}: Props) {
         }}
         viewport={{ once: true }}
         src="about-02.jpeg"
-        className="md:h-95 -mb-20 h-56 w-56 flex-shrink-0 rounded-full object-cover md:mb-0 md:w-64 md:rounded-lg xl:h-[600px] xl:w-[500px]"
+        className="md:h-96 -mb-20 h-44 w-44 sm:h-56 sm:w-56 flex-shrink-0 rounded-full object-cover md:mb-0 md:w-64 md:rounded-lg xl:h-[600px] xl:w-[500px]"
       />
-      <div className="space-y-10 px-0 md:px-10">
-        <h4 className="text-4xl font-semibold">
+      <div className="space-y-10 px-0 md:px-8">
+        <h4 className="text-xl sm:text-4xl font-semibold">
           Here is a <span className=" text-[#F7AB0A]/50">Little</span>{" "}
           Background
         </h4>
-        <p className="text-base">
+        <p className="text-xs sm:text-base">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, non,
           obcaecati, explicabo quam assumenda cupiditate necessitatibus eaque
           doloremque blanditiis dolor deserunt maxime pariatur enim molestiae
@@ -45,6 +45,11 @@ function About({}: Props) {
           quod eligendi inventore. Libero repellat soluta saepe unde possimus
           vero voluptatibus doloribus pariatur voluptatum adipisci quia, ducimus
           culpa minus.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex a culpa
+          quod eligendi inventore. Libero repellat soluta saepe unde possimus
+          vero voluptatibus doloribus pariatur voluptatum adipisci quia, ducimus
+          quod eligendi inventore. Libero repellat soluta saepe unde possimus
+          vero voluptatibus doloribus pariatur voluptatum adipisci quia, ducimus
         </p>
       </div>
     </motion.div>

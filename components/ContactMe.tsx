@@ -24,25 +24,25 @@ function ContactMe({}: Props) {
       </h3>
 
       <div className="flex flex-col space-y-10">
-        <h4 className="text-center text-4xl font-semibold">
+        <h4 className="text-center text-lg sm:text-4xl font-semibold">
           I have got just what you need.{" "}
           <span className="underline decoration-[#F7AB0A]/50">Lets Talk.</span>
         </h4>
 
-        <div className="space-y-10">
+        <div className="space-y-2 sm:space-y-10">
           <div className="flex items-center justify-center space-x-5">
             <PhoneIcon className="h-7 w-7 animate-pulse text-[#F7AB0A]" />
-            <p className="text-2xl">+1234567890</p>
+            <p className="text-md sm:text-2xl">+1234567890</p>
           </div>
 
           <div className="flex items-center justify-center space-x-5">
             <EnvelopeIcon className="h-7 w-7 animate-pulse text-[#F7AB0A]" />
-            <p className="text-2xl">lakshaygoyal020@gmail.com</p>
+            <p className="text-md sm:text-2xl">lakshaygoyal020@gmail.com</p>
           </div>
 
           <div className="flex items-center justify-center space-x-5">
             <MapPinIcon className="h-7 w-7 animate-pulse text-[#F7AB0A]" />
-            <p className="text-2xl">+123 Developer Lane</p>
+            <p className="text-md sm:text-2xl">+123 Developer Lane</p>
           </div>
         </div>
 
@@ -50,7 +50,7 @@ function ContactMe({}: Props) {
           onSubmit={handleSubmit(onSubmit)}
           className="mx-auto flex w-fit flex-col space-y-2"
         >
-          <div className="flex space-x-2">
+          <div className="flex flex-col space-y-2 sm:flex-row sm:space-x-2 sm:space-y-0">
             <input
               {...register("name")}
               placeholder="Name"
@@ -79,7 +79,7 @@ function ContactMe({}: Props) {
           />
           <button
             type="submit"
-            className="rounded-md bg-[#F7AB0A] px-10 py-5 text-lg font-bold text-black"
+            className="rounded-md bg-[#F7AB0A] py-3 px-5 sm:px-10 sm:py-5 text-md sm:text-lg font-bold text-black"
           >
             Submit
           </button>

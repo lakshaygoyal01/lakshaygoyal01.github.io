@@ -17,13 +17,13 @@ function BackgroundCircles({}: Props) {
       transition={{
         duration: 2.5,
       }}
-      className="relative flex items-center justify-center"
+      className="relative flex items-center justify-center max-w-[390px] sm:min-w-full"
     >
-      <div className="absolute mt-52 h-[200px] w-[200px] animate-ping rounded-full border border-[#333333]" />
-      <div className="absolute mt-52 h-[300px] w-[300px] rounded-full border border-[#333333]" />
-      <div className="absolute mt-52 h-[500px] w-[500px] rounded-full border border-[#333333]" />
-      <div className="absolute mt-52 h-[650px] w-[650px] animate-pulse rounded-full border border-[#F7AB0A] opacity-20" />
-      <div className="absolute mt-52 h-[800px] w-[800px] rounded-full border border-[#333333]" />
+      <div className="absolute mt-52 h-[100px] w-[100px] sm:h-[200px] sm:w-[200px] animate-ping rounded-full border border-[#333333]" />
+      <div className="absolute mt-52 h-[200px] w-[200px] sm:h-[300px] sm:w-[300px] rounded-full border border-[#333333]" />
+      <div className="absolute mt-52 h-[250px] w-[250px] sm:h-[500px] sm:w-[500px] rounded-full border border-[#333333]" />
+      <div className="absolute mt-52 h-[300px] w-[300px] sm:h-[650px] sm:w-[650px] animate-pulse rounded-full border border-[#F7AB0A] opacity-20" />
+      <div className="absolute mt-52 h-[350px] w-[350px] sm:h-[800px] sm:w-[800px] rounded-full border border-[#333333]" />
     </motion.div>
   );
 }
