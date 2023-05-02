@@ -19,7 +19,7 @@ export default function Skills({}: Props) {
         HOver over a skill for current proficiency
       </h3> */}
 
-      <div className=" absolute grid grid-cols-4 gap-5">
+      <div className=" absolute grid grid-cols-3 sm:grid-cols-4 gap-5">
         <div className="group relative flex cursor-pointer">
           <img
             className="h-24 w-24 rounded-full border border-gray-500 object-cover filter transition duration-300 ease-in-out group-hover:grayscale md:h-28 md:w-28 xl:h-32 xl:w-32 "

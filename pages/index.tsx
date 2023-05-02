@@ -12,7 +12,7 @@ import WorkExperience from "@/components/WorkExperience";
 
 const Home: NextPage = () => {
   return (
-    <div className="bg-[rgb(32,31,31)] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80">
+    <div className="bg-[rgb(32,31,31)] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80">
       <Head>
         <title>Lakshay's Portfolio</title>
       </Head>
@@ -43,8 +43,8 @@ const Home: NextPage = () => {
         <ContactMe />
       </section>
 
-      <Link href="#hero">
-        <footer className="sticky bottom-5 w-full cursor-pointer">
+      <Link href="#contact">
+        <footer className="sticky bottom-5 w-full cursor-pointer animate-bounce">
           <div className="flex items-center justify-center">
             <img
               className="h-10 w-10 rounded-full filter grayscale hover:grayscale-0 cursor-pointer"
